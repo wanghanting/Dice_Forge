@@ -20,10 +20,9 @@ public class Dice {
         this.side = side;
     }
 
-    private void roll(){
+    DiceSide roll(){
         Random r = new Random();
-        DiceSide diceSide = solar.side[r.nextInt(6)+1];
+        return solar.side[r.nextInt(5)];
     }
-
 
 }

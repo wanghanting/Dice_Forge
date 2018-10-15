@@ -12,4 +12,12 @@ public class DiceSide {
         this.name = name;
         this.point = point;
     }
+
+    String getName(){
+        return name;
+    }
+
+    int getPoint(){
+        return point;
+    }
 }

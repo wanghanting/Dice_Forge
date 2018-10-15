@@ -18,4 +18,7 @@ public class Robot {
         return "Robot: " + name + resource.toString();
     }
 
+    public String getName() {
+        return name;
+    }
 }

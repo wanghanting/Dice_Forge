@@ -5,4 +5,10 @@
  * @University: Polytech Nice-Sophia
  */
 public class Main {
+    public static void main(String[] args) {
+        Motor motor = new Motor();
+        motor.init();
+        motor.game();
+        motor.result();
+    }
 }

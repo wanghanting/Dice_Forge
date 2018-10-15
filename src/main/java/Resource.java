@@ -13,23 +13,23 @@ public class Resource {
         this.gold = gold;
     }
 
-    private int getPoint(){
+    int getPoint(){
         return point;
     }
 
-    private void addPoint(int n){
+    void addPoint(int n){
         point += n;
     }
 
-    private void minusPoint(int n){
+    void minusPoint(int n){
         point -= n;
     }
 
-    private int getGold(){
+    int getGold(){
         return gold;
     }
 
-    private void addGold(int n){
+    void addGold(int n){
         gold += n;
     }
 
@@ -40,5 +40,13 @@ public class Resource {
     @Override
     public String toString(){
         return "point: " + point + " gold: " + gold;
+    }
+
+    public void setPoint(int n) {
+        this.point = n;
+    }
+
+    public void setGold(int n) {
+        this.gold = n;
     }
 }
