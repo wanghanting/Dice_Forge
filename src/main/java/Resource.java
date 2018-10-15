@@ -33,7 +33,7 @@ public class Resource {
         gold += n;
     }
 
-    private void minusGold(int n){
+    void minusGold(int n){
         gold -= n;
     }
 
@@ -41,12 +41,5 @@ public class Resource {
     public String toString(){
         return "point: " + point + " gold: " + gold;
     }
-
-    public void setPoint(int n) {
-        this.point = n;
-    }
-
-    public void setGold(int n) {
-        this.gold = n;
-    }
+    
 }
