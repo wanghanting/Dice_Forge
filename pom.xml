@@ -13,7 +13,7 @@
     </properties>
 
     <build>
-        <sourceDirectory>src</sourceDirectory>
+        <sourceDirectory>src/main</sourceDirectory>
         <testSourceDirectory>src/test</testSourceDirectory> <!-- CHANGE ME -->
         <plugins>
 
@@ -29,17 +29,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>src/main/java/Main</mainClass> <!-- CHANGE ME -->
-                    <!--          <arguments>
-                                <argument>argument1</argument>
-                              </arguments>
-                              <systemProperties>
-                                <systemProperty>
-                                  <key>myproperty</key>
-                                  <value>myvalue</value>
-                                </systemProperty>
-                              </systemProperties>
-                    -->
+                    <mainClass>src/main/java/Main.java</mainClass> <!-- CHANGE ME -->
                 </configuration>
             </plugin>
 

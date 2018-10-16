@@ -15,7 +15,7 @@ public class Robot {
 
     @Override
     public String toString(){
-        return "Robot: " + name + resource.toString();
+        return "Robot: " + name + "\n" + resource.toString();
     }
 
     public String getName() {

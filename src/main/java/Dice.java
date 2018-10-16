@@ -13,7 +13,7 @@ public class Dice {
     public static final DiceSide gold1 = new DiceSide("gold", 1);
     public static final DiceSide gold2 = new DiceSide("gold", 2);
 
-    public static final Dice solar = new Dice("solar", new DiceSide[]{point1, gold1, gold1, gold2, gold1, gold1});
+    public static final Dice solar = new Dice("solar", new DiceSide[]{point1, gold1, gold1, gold1, gold1, gold2});
 
     public Dice(String name, DiceSide[] side){
         this.name = name;
@@ -22,7 +22,7 @@ public class Dice {
 
     DiceSide roll(){
         Random r = new Random();
-        return solar.side[r.nextInt(5)];
+        return solar.side[r.nextInt(6)];
     }
 
 }

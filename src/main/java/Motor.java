@@ -1,5 +1,3 @@
-import com.sun.istack.internal.localization.NullLocalizable;
-
 /**
  * @Project: Dice_forge
  * @Author:
@@ -11,16 +9,21 @@ public class Motor {
     Dice dice = Dice.solar;
     Resource resource;
 
+    public Motor(){
+
+    }
+
     void init(){
         robot = new Robot("r1", resource);
         robot.resource = new Resource(0,0);
     }
 
     void game(){
-        if (dice.roll().getName().equals("point")){
-            robot.resource.addPoint(dice.roll().getPoint());
-        }else if(dice.roll().getName().equals("gold")){
-            robot.resource.addGold(dice.roll().getPoint());
+        DiceSide roll = dice.roll();
+        if (roll.getName().equals("point")){
+            robot.resource.addPoint(roll.getPoint());
+        }else if(roll.getName().equals("gold")){
+            robot.resource.addGold(roll.getPoint());
         }else{
             System.out.println("");
         }
